@@ -1,4 +1,4 @@
 module.exports = {
-  searchInput: 'textarea[name="q"]',
+  searchInput: 'textarea[name="qs"]',
   searchResult: 'h3',
 };
