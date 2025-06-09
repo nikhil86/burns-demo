@@ -30,8 +30,11 @@ steps:
 
   - script: npx allure generate allure-results --clean -o allure-report
     displayName: 'Generate Allure Report'
+    condition: always()
 
   - task: PublishPipelineArtifact@1
     inputs:
       targetPath: 'allure-report'
       artifact: 'allure-report'
+    condition: always()
+    displayName: 'Publish Allure Report Artifact'
