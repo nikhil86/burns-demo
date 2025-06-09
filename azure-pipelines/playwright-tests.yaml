@@ -12,6 +12,7 @@ steps:
       versionSpec: '18.x'
 
   - script: |
+      rm -rf node_modules
       npm ci
       npx playwright install --with-deps
     displayName: 'Install dependencies and Playwright'
